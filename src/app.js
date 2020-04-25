@@ -12,7 +12,7 @@ import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
 const store = configureStore();
-
+console.log("Test...");
 // store.dispatch(
 //   addExpense({
 //     description: "Water Bill",
