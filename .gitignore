@@ -1,6 +1,7 @@
 node_modules/  
 "package copy.json"  
-public\bundle.js.map  
+public/bundle.js
 public/bundle.js.map  
 public/styles.css  
 public/styles.css.map  
+ 
