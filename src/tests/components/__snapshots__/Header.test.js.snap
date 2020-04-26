@@ -13,30 +13,12 @@ exports[`should render Header correctly 1`] = `
   >
     Dashboard
   </NavLink>
-  <br />
   <NavLink
     activeClassName="is-active"
     aria-current="page"
     to="/create"
   >
-    Create...
+     Create Expense
   </NavLink>
-  <br />
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/edit"
-  >
-    Edit...
-  </NavLink>
-  <br />
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/help"
-  >
-    Help...
-  </NavLink>
-  <br />
 </header>
 `;
