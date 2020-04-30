@@ -7,12 +7,12 @@ import { addExpense, editExpense, removeExpense } from "./actions/expenses";
 import { setTextFilter } from "./actions/filters";
 import getVisibilityExpenses from "./selectors/expenses";
 import "react-dates/lib/css/_datepicker.css";
+import "./firebase/firebase";
 
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
 const store = configureStore();
-console.log("Test...");
 // store.dispatch(
 //   addExpense({
 //     description: "Water Bill",
