@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
-import { addExpense, editExpense, removeExpense } from "./actions/expenses";
+//import { addExpense, editExpense, removeExpense } from "./actions/expenses";
+import { startSetExpenses } from "./actions/expenses";
 import { setTextFilter } from "./actions/filters";
 import getVisibilityExpenses from "./selectors/expenses";
 import "react-dates/lib/css/_datepicker.css";
@@ -54,5 +55,26 @@ const jsx = (
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById("app"));
+//ReactDOM.render(<p>Loading...</p>, document.getElementById("app"));
+
+// store.dispatch(startSetExpenses()).then(() => {
+//   console.log("11111111.......");
+//   ReactDOM.render(jsx, document.getElementById("app"));
+// });
+
+const ddf = store.dispatch(startSetExpenses());
+
+//console.log(ddf);
+
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(jsx, document.getElementById("app"));
+});
+
+// store.dispatch(
+//   startSetExpenses().then(() => {
+//     console.log("11111111.......");
+//     ReactDOM.render(jsx, document.getElementById("app"));
+//   })
+// );
+
 //ReactDOM.render(<AppRouter />, document.getElementById("app"));
